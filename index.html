@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LottoLab - Smart Lottery Number Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #E74C3C, #c0392b);
+            border-radius: 24px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #fff, #E74C3C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 1.3em;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #E74C3C;
+        }
+        .feature p {
+            color: #aaa;
+            font-size: 0.95em;
+        }
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #000;
+            padding: 12px 30px;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s;
+        }
+        .badge:hover {
+            transform: scale(1.05);
+        }
+        .badge-icon {
+            font-size: 1.5em;
+        }
+        .disclaimer {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid rgba(231, 76, 60, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 40px 0;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .disclaimer strong {
+            color: #E74C3C;
+        }
+        .links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .links a {
+            color: #E74C3C;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .contact-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        .contact-section h2 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .contact-section a {
+            color: #E74C3C;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">🔬</div>
+        <h1>LottoLab</h1>
+        <p class="tagline">Smart Lottery Number Generator for Powerball & Mega Millions</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📍</div>
+                <h3>GPS Mode</h3>
+                <p>Generate numbers based on your unique location</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌙</div>
+                <h3>Celestial Mode</h3>
+                <p>Align with planets, moon phases, and stars</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌤️</div>
+                <h3>Weather Mode</h3>
+                <p>Use real-time weather conditions</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📈</div>
+                <h3>Markets Mode</h3>
+                <p>Harness crypto and stock market data</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🧮</div>
+                <h3>Math Mode</h3>
+                <p>20+ mathematical pattern filters</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Historical Analysis</h3>
+                <p>View hot, cold, and overdue numbers</p>
+            </div>
+        </div>
+
+        <div class="badges">
+            <a href="#" class="badge">
+                <span class="badge-icon">🍎</span>
+                <span>Download on the App Store</span>
+            </a>
+            <a href="#" class="badge">
+                <span class="badge-icon">▶️</span>
+                <span>Get it on Google Play</span>
+            </a>
+        </div>
+
+        <div class="disclaimer">
+            <strong>⚠️ Disclaimer:</strong> LottoLab is for entertainment purposes only. This app does not guarantee any lottery wins. Lottery drawings are completely random events, and no app, system, or strategy can predict winning numbers. Only play with money you can afford to lose.
+        </div>
+
+        <div class="contact-section">
+            <h2>Support</h2>
+            <p>Have questions or need help? Contact us at:</p>
+            <p><a href="mailto:burademirung@gmail.com">burademirung@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 LottoLab. All rights reserved.</p>
+    </footer>
+</body>
+</html>
